@@ -19,9 +19,11 @@ elif operator=='-':
 #condition to multiply two numbers
 elif operator=='*':
     print("Result",x*y) 
+
 #condition for calculate the module
 elif operator=='%':
-    print(x%y)
+    print("Result",x%y)
+    
 #condition to divide two numbers
 else:
     print("Result",x/y)
