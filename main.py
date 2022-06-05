@@ -9,7 +9,7 @@ def read_file_content(filename):
 
 
 def count_words():
-    text = read_file_content("./story.txt")
+    text = read_file_content("./shertiff.txt")
 
     text=text.lower()
 
