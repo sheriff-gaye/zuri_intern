@@ -1,59 +1,71 @@
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8"> 
-<title>Chessboard using Pure CSS and HTML</title>
-<link rel="stylesheet" href="chess.css" type="text/css">
-</head>
-<body>
-<div class="chessboard">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <style>
+      .chess-board {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin: 50px 0 0 450px;
+      }
+      .chess-board th {
+        padding: 0.5em;
+      }
+      .chess-board td {
+        border: 1px solid;
+        width: 80px;
+        height: 80px;
+      }
+      .chess-board .light {
+        background: #eee;
+      }
+      .chess-board .dark {
+        background: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="chess-board">
+      <tbody>
+        <tr></tr>
 
-    <!-- <h1>5X5 Chessboard</h1> -->
-<!-- 1st -->
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<!-- 2nd -->
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<!-- 3th -->
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<!-- 4st -->
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<!-- 5th -->
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-<div class="white"></div>
-<div class="black"></div>
-
-</div>
-</body>
+        <tr>
+          <td class="dark"></td>
+          <td class="light"></td>
+          <td class="dark"></td>
+          <td class="light"></td>
+          <td class="dark"></td>
+        </tr>
+        <tr>
+          <td class="light"></td>
+          <td class="dark"></td>
+          <td class="light"></td>
+          <td class="dark"></td>
+          <td class="light"></td>
+        </tr>
+        <tr>
+          <td class="dark"></td>
+          <td class="light"></td>
+          <td class="dark"></td>
+          <td class="light"></td>
+          <td class="dark"></td>
+        </tr>
+        <tr>
+          <td class="light"></td>
+          <td class="dark"></td>
+          <td class="light"></td>
+          <td class="dark"></td>
+          <td class="light"></td>
+        </tr>
+        <tr>
+          <td class="dark"></td>
+          <td class="light"></td>
+          <td class="dark"></td>
+          <td class="light"></td>
+          <td class="dark"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
