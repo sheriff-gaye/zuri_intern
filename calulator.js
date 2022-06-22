@@ -1,17 +1,22 @@
 
 
-function add(x,y)
+function calc(x,y,operator)
 {
-    document.write(x+y);
-
+    if(operator=="+")
+    {
+        return x+y
+    }
+    else if(operator=="-")
+    {
+        return x-y
+    }
+    else if (operator=="*")
+    {
+        return x*y
+    }
+    else
+    {
+        return x-y
+    }
 }
-
-function sub(x,y)
-{
-    document.write(x-y);
-}
-
-function multi(x,y)
-{
-    document.write(x*y);
-}
+var p=calc(5,6,'*') //it returns 30
